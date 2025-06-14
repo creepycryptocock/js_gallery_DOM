@@ -14,8 +14,10 @@ function changeImage() {
     }
 
     const link = li.querySelector('a');
+    const image = link.querySelector('img');
 
     largeImg.src = link.href;
+    largeImg.alt = image.alt;
   });
 }
 
